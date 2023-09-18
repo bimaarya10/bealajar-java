@@ -5,6 +5,7 @@ public class ProgramSederhana {
         double mtk = 55, ipa = 66, bahsa = 77;
         var total = mtk + ipa + bahsa;
         double rata = total / 3;
+        String status = "Tidak Lulus";
 
         System.out.println("Nama : " + nama);
         System.out.println("NIM : " + nim);
@@ -19,12 +20,10 @@ public class ProgramSederhana {
 
         System.out.println("");
 
-       
+       if(rata >= 90){
+        status = "Lulus";
+       }
 
-        if (rata >= 60) {
-            System.out.println("Selamat anda lulus");
-        } else {
-            System.out.println("bodoh");
-        }
+       System.out.println("Status anda : " + status);        
     }
 }
